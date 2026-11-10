@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-cream-50 text-ink antialiased;
+  }
+
+  /* Soft focus ring for keyboard users only. */
+  :focus-visible {
+    @apply outline-none;
+    box-shadow: 0 0 0 3px rgba(160, 138, 218, 0.5);
+    border-radius: 6px;
+  }
+}
